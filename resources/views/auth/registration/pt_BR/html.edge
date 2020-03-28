@@ -1,0 +1,38 @@
+@layout('layout.default')
+
+@section('content')
+  @component('components.title')
+    Precisamos confirmar seu e-mail.
+  @endcomponent
+
+  @component('components.body')
+    @component('components.ptitle')
+      Olá, {{username}}
+    @endcomponent
+
+    @component('components.p')
+      O seu endereço de e-mail está correto? <br/>
+      Para confirmar que seu cadastro em nosso sistema, por favor clique no botão abaixo.
+    @endcomponent
+
+    <br/>
+
+    @component('components.button', { link: link })
+      Confirmar  meu endereço de e-mail
+    @endcomponent
+
+    @component('components.psmall')
+      Não funcionou? Copie o link abaixo no seu navegador:
+    @endcomponent
+
+    @component('components.link', { link: link })
+      {{ link }}
+    @endcomponent
+
+    @component('components.p')
+      Se você não sabe por que recebeu este email, entre em contato conosco aqui para que possamos corrigir isso para você.
+      Não solicitou essa troca? Ignore este e-mail ou entre em contato conosco.
+    @endcomponent
+  @endcomponent
+
+@endsection

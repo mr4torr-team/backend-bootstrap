@@ -1,0 +1,16 @@
+{
+  "database_connect" : "Problema ao tentar se conectar ao banco de dados",
+  "registry_unique" : "Registro já existente",
+  "params_not_exist" : "Ausência do campo {{field}} no corpo da requisição",
+  "user" : {
+    "inative": "Usuário inativo",
+    "disconnected": "Usuário disconectado"
+  },
+  "auth" : {
+    "authorize": "Acesso não autorizado",
+    "secret": "Token de renovação inválida",
+    "secret_expired": "Token de renovação expirado",
+    "token_not_exist": "Token inexistente",
+    "jwt_expired": "Token inválido"
+  }
+}

@@ -1,0 +1,36 @@
+@layout('layout.default')
+
+@section('content')
+  @component('components.title')
+    Recuperação de senha
+  @endcomponent
+
+  @component('components.body')
+    @component('components.ptitle')
+      Olá, {{username}}
+    @endcomponent
+
+    @component('components.p')
+      Foi feita uma solicitação para recuperar a senha da sua conta. <br/>
+      Clique o link abaixo e redefina sua senha.
+    @endcomponent
+
+    <br/>
+
+    @component('components.button', { link: link })
+      Criar nova senha
+    @endcomponent
+
+    @component('components.psmall')
+      Não funcionou? Copie o link abaixo no seu navegador:
+    @endcomponent
+
+    @component('components.link', { link: link })
+      {{ link }}
+    @endcomponent
+
+    @component('components.p')
+      Não solicitou essa troca? Ignore este e-mail ou entre em contato conosco.
+    @endcomponent
+  @endcomponent
+@endsection

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style type="text/css">
+    @media only screen and (max-device-width: 480px) {
+      table[class="conteudo"] {
+        max-width: 320px !important;
+      }
+
+      td[class="header"] img {
+        height: auto !important;
+        max-width: 100% !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body style="padding:0;margin:0;background:#f2f5f7 ">
+  <table width="100%" bgcolor="#f2f5f7" border="0" cellpadding="0" cellspacing="0" class="bg" style="border-collapse:collapse;height:100%;margin:0;padding:0;width:100%;background-color:#f2f5f7;">
+    <tr>
+      <td height="50">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <table style="max-width:600px; border-radius:4px; background: #FFF" bgcolor="#FFF" border="0" cellspacing="0" cellpadding="0" align="center" class="conteudo">
+          <tr>
+            <td>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="conteudo">
+                <tr>
+                  <td>
+                    <table border="0" width="100%" cellspacing="0" cellpadding="25" align="center">
+                      <tr>
+                        <td>
+                          <h1 style="border: none; text-align:center; margin: 0px; padding: 0px; font-family: Circular, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; text-decoration: none; color: #37517e; font-size: 32px; font-weight: bold; line-height: 45px; letter-spacing: -0.04em;">
+                            {{ application_name }}
+                          </h1>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    @!section('content')
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" bgcolor="#e6ebee" style="border-radius:0 0 4px 4px;" border="0" cellspacing="0" cellpadding="20" align="center" class="conteudo">
+                      <tr>
+                        <td>
+                          <p style="color: #74787f; font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; letter-spacing: 0.4px; text-align: left;">
+                            Agradecemos a atenção, <br/> <b>Equipe {{ application_name }}</b>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table  style="max-width:600px;" border="0" cellspacing="0" cellpadding="0" align="center" class="conteudo">
+          <tr>
+            <td>
+              <p style="color:#74787f;font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:18px;letter-spacing:0.4px;text-align:center">
+                Este email foi enviado pela {{ application_name }} em nome de {{ context_name }} <br/>
+                Quer alterar as atualizações que enviamos para você? <br/>
+                Acesse <a href="#" style="color: #00b9ff !important">Notificações</a> para configurar as suas preferências. <br/>
+                Não podemos receber respostas neste endereço de email. <br/>
+                Mas se você precisar de ajuda, visite o nosso <a href="#" style="color: #00b9ff !important">Centro de Suporte</a>.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>
+              <p style="color:#5d7079;font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:24px;letter-spacing:0.4px;text-align:center">
+                &copy; {{ application_name }} 2020. All rights reserved.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="50">&nbsp;</td>
+    </tr>
+  </table>
+</body>
+
+</html>

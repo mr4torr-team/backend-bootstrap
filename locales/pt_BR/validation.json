@@ -1,0 +1,7 @@
+{
+  "base":  {
+    "required": "Campo requerido",
+    "email": "Endereço de e-mail inválido",
+    "uniq": "Registro já existente"
+  }
+}

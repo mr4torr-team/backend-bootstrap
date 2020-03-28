@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "confirmation": {
+      "valid": "Cadastro confirmado!",
+      "invalid": "Cadastro já confirmado ou token inválido!"
+    },
+    "recover": {
+      "valid": "Verifique seu e-mail, enviamos instruções de como recuperar sua conta!",
+      "invalid": "Não foi criado um conta com esse e-mail!"
+    },
+    "recover_change": {
+      "valid": "Senha alterada com sucesso, faça o login con sua nova senha!",
+      "invalid": "Token inválido ou usuário inexistente!"
+    }
+  }
+}

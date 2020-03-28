@@ -1,0 +1,7 @@
+{
+  "base":  {
+    "required": "This field is required",
+    "email": "Address email invalid",
+    "uniq": "Registry existing"
+  }
+}
