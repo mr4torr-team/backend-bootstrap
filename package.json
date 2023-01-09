@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "@adonisjs/ace": "^6.0.0",
-    "@adonisjs/core": "^5.0.0-preview",
+    "@adonisjs/core": "^5.9.0",
     "@adonisjs/fold": "^6.0.0",
-    "@adonisjs/lucid": "^7.6.3",
+    "@adonisjs/lucid": "^18.3.0",
     "@adonisjs/view": "^1.0.13",
     "@phc/bcrypt": "^1.0.2",
     "i18next": "^19.3.3",
